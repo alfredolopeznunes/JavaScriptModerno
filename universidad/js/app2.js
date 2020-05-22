@@ -27,3 +27,11 @@ function ejecutaBoton(ev) {
 document.querySelector('#encabezado-reemplazado-js').addEventListener('click', function(e){
     e.target.innerText = "Nuevo encabezado con Event Listener";
 });
+
+(function() {
+    var carA = new Object({color: "blue"});
+    var carB = new Object({color: "blue"});
+
+    console.log(carA == carB);
+    console.log(carA === carB);
+})()
